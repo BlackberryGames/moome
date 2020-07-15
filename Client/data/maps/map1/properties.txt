@@ -1,0 +1,4 @@
+name:Finally Zips
+author:mooncat39
+maps:map.txt,map1.txt
+cutscenes:cutscene 1,cutscene 2
