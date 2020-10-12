@@ -1,3 +1,9 @@
+# makepkg stuff
+pkg/
+moome-1.0/
+src/
+*.tar.zst
+
 # Compiled class file
 *.class
 

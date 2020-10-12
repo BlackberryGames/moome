@@ -51,9 +51,13 @@ package() {
     mkdir -p "$pkgdir/usr/bin"
     mkdir -p "$pkgdir/usr/share/moome/lib"
     mkdir -p "$pkgdir/usr/share/moome/data"
+    mkdir -p "$pkgdir/usr/share/moome/data/maps"
     
     # copy files over and change perms
     install "${srcdir}/${pkgname}-${pkgver}/lib/_run.sh" "${pkgdir}/usr/bin/moome" --mode=755 --owner="root" --group="root"
     rinstall "${srcdir}/${pkgname}-${pkgver}/lib" "${pkgdir}/usr/share/moome/lib" --mode=755 --owner="root" --group="root"
     rinstall "${srcdir}/${pkgname}-${pkgver}/data" "${pkgdir}/usr/share/moome/data" --mode=755 --owner="root" --group="root"
+
+    cd "${pkgdir}/usr/share/moome/data/maps/"
+    zip -jr map.zip map/map.txt map/map1.txt map/properties.txt
 }
