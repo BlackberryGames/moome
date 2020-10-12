@@ -19,7 +19,7 @@ public class Util {
     public static BufferedImage[] fonts = new BufferedImage[] {getImage("../data/images/misc/fontWhite.png"),
                                                                getImage("../data/images/misc/fontBlack.png")};
     public static final int FONT_WHITE = 0, FONT_BLACK = 1;
-    public static final File tmpFile = new File(new File(new File(System.getProperty("user.home")), "moome"), ".tmp");
+    public static final File tmpFile = new File(new File(new File(System.getProperty("user.home")), ".moome"), ".tmp");
     public static boolean adventureMode = false;
     public static MoomeServerConnector server = null;
     
