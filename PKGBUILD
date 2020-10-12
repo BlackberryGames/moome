@@ -8,7 +8,7 @@ md5sums=("SKIP")
 url="https://github.com/BlackberryCode/moome"
 pkgdesc="a server for the Moome client"
 source=("${pkgname}-${pkgver}::git+https://github.com/BlackberryCode/moome.git#branch=master")
-makedepends=("jdk-openjdk" "java-environment-common")
+makedepends=("jdk-openjdk" "java-environment-common" "zip")
 depends=("java-runtime-common")
 
 rinstall() {
