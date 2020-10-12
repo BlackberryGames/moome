@@ -51,4 +51,9 @@ public abstract class MenuScreen extends Screen {
             //((TextBox)elements.get(a)).text += i;
         }
     }
+
+    public int getMusic() {
+        return 1;
+        
+    }
 }

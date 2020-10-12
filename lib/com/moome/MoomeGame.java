@@ -53,7 +53,7 @@ public class MoomeGame {
         frame.setLayout(new BorderLayout());
         frame.getContentPane().add("Center", gamePane);
         frame.setVisible(true);
-        
+
         Runtime.getRuntime().addShutdownHook(new Thread() {
             public void run() {
                 if(Util.server != null) {
