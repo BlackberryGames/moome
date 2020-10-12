@@ -49,7 +49,11 @@ public class MoomeGame {
         frame.setIconImage(Util.getImage("../data/images/entities/moome.png"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        //frame.setUndecorated(true);
+
+        frame.setUndecorated(true);
+        frame.setResizable(false);
+        gd.setFullScreenWindow(frame);
+
         frame.setLayout(new BorderLayout());
         frame.getContentPane().add("Center", gamePane);
         frame.setVisible(true);
